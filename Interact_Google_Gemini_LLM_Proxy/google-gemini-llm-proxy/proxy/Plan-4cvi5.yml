@@ -1,0 +1,18 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: plan-google-gemini-llm-proxy-4cvi5
+  namespace: interact_google_gemini_llm_proxy
+  version: 1.0.0
+  tags:
+    - DataPowerInteractGateway
+    - GoogleGemini
+    - llm
+    - ai
+  description: ''
+  domain: ai-platform
+spec:
+  qos:
+    withQuota:
+      gemini-token-weighted:
+        - $ref: interact_google_gemini_llm_proxy:gemini-token-weighted-4cvi5:1.0.0

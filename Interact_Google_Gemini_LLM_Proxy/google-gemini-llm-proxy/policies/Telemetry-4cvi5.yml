@@ -1,0 +1,34 @@
+kind: Telemetry
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Telemetry-4cvi5
+  namespace: interact_google_gemini_llm_proxy
+  version: 1.0.0
+  tags:
+    - DataPowerInteractGateway
+    - GoogleGemini
+    - llm
+    - ai
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  verbosity:
+    - level: basic
+      onSuccessTrimTo: normal
+      inboundLevel: basic
+      outboundLevel: basic
+      operations:
+        - path: /models/{a_model_id}:generateContent
+          method: POST
+        - path: /models/{a_model_id}:embedContent
+          method: POST
+        - path: /models/{a_model_id}:batchEmbedContents
+          method: POST
+        - path: /models/{a_model_id}:countTokens
+          method: POST
+        - path: /models
+          method: GET
+        - path: /models/{a_model_id}
+          method: GET

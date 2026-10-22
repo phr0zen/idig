@@ -1,0 +1,28 @@
+kind: LLMProxy
+apiVersion: api.ibm.com/v1
+metadata:
+  name: google-gemini-llm-proxy
+  namespace: interact_google_gemini_llm_proxy
+  version: 1.0.0
+  tags:
+    - DataPowerInteractGateway
+    - GoogleGemini
+    - llm
+    - ai
+  labels:
+    gatewayTypes:
+      - nano
+  domain: ai-platform
+  description: Google Gemini LLM Proxy
+spec:
+  title: Google Gemini LLM Proxy
+  providers:
+    - ibm-apic-idig:google-gemini:1.0.0
+  providerType: gemini
+  basePath: /
+  selectedModels:
+    - gemini-2.5-flash
+  plan:
+    $ref: interact_google_gemini_llm_proxy:plan-google-gemini-llm-proxy-4cvi5:1.0.0
+  policy-sequence:
+    - $ref: interact_google_gemini_llm_proxy:freeflowpolicysequence-google-gemini-llm-proxy-4cvi5:1.0.0

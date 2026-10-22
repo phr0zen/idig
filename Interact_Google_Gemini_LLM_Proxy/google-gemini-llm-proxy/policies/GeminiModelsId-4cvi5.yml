@@ -1,0 +1,20 @@
+kind: Gemini
+apiVersion: api.ibm.com/v1
+metadata:
+  name: GeminiModelsId-4cvi5
+  namespace: interact_google_gemini_llm_proxy
+  version: 1.0.0
+  tags:
+    - DataPowerInteractGateway
+    - GoogleGemini
+    - llm
+    - ai
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  tlsClientProfile: sample-tls-client-profile:1.0.0
+  operation:
+    modelsId:
+      model: $(a_model_id)

@@ -1,0 +1,25 @@
+kind: ExtractIdentity
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ExtractIdentity-4cvi5
+  namespace: interact_google_gemini_llm_proxy
+  version: 1.0.0
+  tags:
+    - DataPowerInteractGateway
+    - GoogleGemini
+    - llm
+    - ai
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  credentialType:
+    apiKey:
+      clientId:
+        httpHeader:
+          name: X-IBM-Client-Id
+      clientSecret:
+        httpHeader:
+          name: X-IBM-Client-Secret
+  namespace: client

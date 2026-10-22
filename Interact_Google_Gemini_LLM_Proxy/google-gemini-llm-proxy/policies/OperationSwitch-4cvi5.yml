@@ -1,0 +1,54 @@
+kind: OperationSwitch
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OperationSwitch-4cvi5
+  namespace: interact_google_gemini_llm_proxy
+  version: 1.0.0
+  tags:
+    - DataPowerInteractGateway
+    - GoogleGemini
+    - llm
+    - ai
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  cases:
+    - conditions:
+        - verbPath:
+            path: /models/{a_model_id}:generateContent
+            verb: POST
+      execute:
+        - $ref: interact_google_gemini_llm_proxy:GeminiGenerateContent-4cvi5:1.0.0
+    - conditions:
+        - verbPath:
+            path: /models/{a_model_id}:embedContent
+            verb: POST
+      execute:
+        - $ref: interact_google_gemini_llm_proxy:GeminiEmbedContent-4cvi5:1.0.0
+    - conditions:
+        - verbPath:
+            path: /models/{a_model_id}:batchEmbedContents
+            verb: POST
+      execute:
+        - $ref: >-
+            interact_google_gemini_llm_proxy:GeminiBatchEmbedContents-4cvi5:1.0.0
+    - conditions:
+        - verbPath:
+            path: /models/{a_model_id}:countTokens
+            verb: POST
+      execute:
+        - $ref: interact_google_gemini_llm_proxy:GeminiCountTokens-4cvi5:1.0.0
+    - conditions:
+        - verbPath:
+            path: /models
+            verb: GET
+      execute:
+        - $ref: interact_google_gemini_llm_proxy:GeminiModels-4cvi5:1.0.0
+    - conditions:
+        - verbPath:
+            path: /models/{a_model_id}
+            verb: GET
+      execute:
+        - $ref: interact_google_gemini_llm_proxy:GeminiModelsId-4cvi5:1.0.0

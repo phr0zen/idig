@@ -1,0 +1,28 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: freeflowpolicysequence-google-gemini-llm-proxy-4cvi5
+  namespace: interact_google_gemini_llm_proxy
+  version: 1.0.0
+  tags:
+    - DataPowerInteractGateway
+    - GoogleGemini
+    - llm
+    - ai
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: interact_google_gemini_llm_proxy:ExtractIdentity-4cvi5:1.0.0
+    - $ref: interact_google_gemini_llm_proxy:Authenticate-4cvi5:1.0.0
+    - $ref: interact_google_gemini_llm_proxy:Authorize-4cvi5:1.0.0
+    - $ref: interact_google_gemini_llm_proxy:If-4cvi5:1.0.0
+    - $ref: interact_google_gemini_llm_proxy:OperationSwitch-4cvi5:1.0.0
+  monitoring:
+    $ref: interact_google_gemini_llm_proxy:Telemetry-4cvi5:1.0.0
+  error:
+    - errorType: []
+      execute:
+        - $ref: interact_google_gemini_llm_proxy:Throw-4cvi5:1.0.0
