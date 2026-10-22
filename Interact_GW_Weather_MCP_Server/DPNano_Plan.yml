@@ -1,0 +1,14 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Interact_GW_Weather_MCP_Server-plan-yhim4
+  namespace: Interact_GW_Weather_MCP_Server
+  version: '1.0'
+  domain: mcp
+  tags: []
+spec:
+  qos:
+    withQuota:
+      Interact_GW_Weather_MCP_Server-plan-yhim4-limit:
+        - $ref: >-
+            Interact_GW_Weather_MCP_Server:Interact_GW_Weather_MCP_Server-quota-yhim4:1.0

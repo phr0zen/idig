@@ -8,3 +8,28 @@ projects:
       - llm
       - ai
     lastUpdated: 1792654570847
+  Interact_GW_WatsonX_LLM_Proxy:
+    id: OfNrzPEu
+    description: >-
+      IBM watsonx.ai LLM Proxy sample demonstrating API Connect gateway
+      integration with watsonx, including IBM Cloud login, authentication,
+      authorization, and operations for text chat, text generation,
+      tokenization, embeddings, and model listing.
+    tags:
+      - DataPower Nano Gateway
+      - watsonx
+      - llm-proxy
+      - ai
+    lastUpdated: 1792654703371
+  Interact_GW_Weather_MCP_Server:
+    id: BBphEBLG
+    description: >-
+      MCP Server connection on DataPower Nano Gateway exposing Singapore Weather
+      API tools for real-time air temperature readings from NEA weather
+      stations, with quota and telemetry policies.
+    tags:
+      - DataPower Nano Gateway
+      - mcp-server
+      - weather-api
+      - ai
+    lastUpdated: 1792654707785
