@@ -8,3 +8,16 @@ projects:
       - llm
       - ai
     lastUpdated: 1792654570847
+  Interact_GW_WatsonX_LLM_Proxy:
+    id: oXpMAC6n
+    description: >-
+      IBM watsonx.ai LLM Proxy sample demonstrating API Connect gateway
+      integration with watsonx, including IBM Cloud login, authentication,
+      authorization, and operations for text chat, text generation,
+      tokenization, embeddings, and model listing.
+    tags:
+      - DataPower Nano Gateway
+      - watsonx
+      - llm-proxy
+      - ai
+    lastUpdated: 1792656789279
