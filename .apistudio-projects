@@ -24,3 +24,12 @@ projects:
       - weather-api
       - ai
     lastUpdated: 1792653746754
+  Interact_Google_Gemini_LLM_Proxy:
+    id: UDxV92A6
+    description: ''
+    tags:
+      - DataPower Interact Gateway
+      - Google Gemini
+      - llm
+      - ai
+    lastUpdated: 1792654418729
