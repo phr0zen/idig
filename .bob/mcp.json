@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "interact-gateway-onprem-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "-p",
+        "/Users/khoinguyenan/Code/idig/idig-flow-pilot/mcp-servers/interact-gateway-onprem/interact-gateway-onprem-mcp-server-0.0.1.tgz",
+        "interact-gateway-onprem-mcp-server"
+      ],
+      "env": {
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0",
+        "STANDALONE_URL": "https://idig.apps.acm-hub.cloud.lan",
+        "STANDALONE_USERNAME": "nguyenan",
+        "STANDALONE_PASSWORD": "REPLACE_ME"
+      }
+    }
+  }
+}
