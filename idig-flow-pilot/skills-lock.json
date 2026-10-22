@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "skills": {
+    "asset-manager": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "0d92df8fc6f1b4faf2377209a97070b624aeba7e14e3bd35abe34588c67cb754"
+    },
+    "build-project": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "e2fa91740859ba46793cef157121e1ea3f624cfa1246c4449751af8ebba2bfc8"
+    },
+    "lint-project": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "95916225912492bf32fafe48823b57949f404eb05f92b18e5931591e039d719b"
+    },
+    "operation-selector": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "98596a4c7a1bf25809c46993f5d874c40b586a673f1ca38ef9bc46bd0a9d4b4e"
+    },
+    "project-manager": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "a8a7d2c78272cec6ebe28903f7f323c6f4b2cdab02de5235ebcf223a08965bfd"
+    },
+    "setup-agent-kit": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "62f4c58af7c58636463a9a632e7dd90cb7b5fc05590463828752b8c29c3b69b8"
+    },
+    "setup-mcp-asset": {
+      "source": ".",
+      "sourceType": "local",
+      "computedHash": "bc12894e2e522934756ee9723925265ae6d7a9547dd14448e614ae53f0fb7399"
+    }
+  }
+}
