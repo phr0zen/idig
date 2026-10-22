@@ -1,0 +1,54 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Project Lifecycle",
+      "description": "Create, manage, build, validate, and publish IBM API Connect projects using the apic CLI.",
+      "skills": [
+        "project-manager",
+        "build-project",
+        "lint-project",
+        "publish-project"
+      ]
+    },
+    {
+      "title": "Asset Authoring",
+      "description": "Design and manage APIC assets — APIs, Products, Plans, Policies, and Routes — including gateway-type conversion and OWASP security hardening.",
+      "skills": [
+        "asset-manager"
+      ]
+    },
+    {
+      "title": "Testing",
+      "description": "Generate and execute API tests for published APIs from OpenAPI specifications.",
+      "skills": [
+        "test-generator"
+      ]
+    },
+    {
+      "title": "MCP Integration",
+      "description": "Convert REST OpenAPI specs into MCP gateway assets and select operations for MCP tool generation.",
+      "skills": [
+        "rest-to-mcp-generator",
+        "operation-selector"
+      ]
+    },
+    {
+      "title": "Setup & Onboarding",
+      "description": "Install and configure IBM API Connect MCP servers and agent skills in any supported AI coding assistant.",
+      "skills": [
+        "setup-agent-kit"
+      ]
+    },
+    {
+      "title": "Datapower Interact Gateway dependent skills",
+      "description": "Install and configure required agent skills to get the IDIG flow working.",
+      "skills": [
+        "operation-selector",
+        "build-project",
+        "project-manager"
+      ]
+    }
+  ]
+}
