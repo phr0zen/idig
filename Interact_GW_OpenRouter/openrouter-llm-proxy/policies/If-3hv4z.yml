@@ -1,0 +1,15 @@
+kind: If
+apiVersion: api.ibm.com/v1
+metadata:
+  name: If-3hv4z
+  namespace: interact_gw_openrouter
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  condition: ($pathParameter('a_model_id'))
+  execute:
+    - $ref: interact_gw_openrouter:Set-3hv4z:1.0.0

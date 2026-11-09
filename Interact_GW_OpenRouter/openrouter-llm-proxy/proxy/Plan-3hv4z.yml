@@ -1,0 +1,14 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: plan-openrouter-llm-proxy-3hv4z
+  namespace: interact_gw_openrouter
+  version: 1.0.0
+  tags: []
+  description: ''
+  domain: ai-platform
+spec:
+  qos:
+    withQuota:
+      openai-token-weighted:
+        - $ref: interact_gw_openrouter:openai-token-weighted-3hv4z:1.0.0

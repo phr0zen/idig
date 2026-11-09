@@ -1,0 +1,19 @@
+kind: OperationSwitch
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OperationSwitch-3hv4z
+  namespace: interact_gw_openrouter
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  cases:
+    - conditions:
+        - verbPath:
+            path: /chat/completions
+            verb: POST
+      execute:
+        - $ref: interact_gw_openrouter:OpenAIChatCompletions-3hv4z:1.0.0

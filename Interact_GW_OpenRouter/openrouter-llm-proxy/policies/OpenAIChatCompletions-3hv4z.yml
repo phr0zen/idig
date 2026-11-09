@@ -1,0 +1,15 @@
+kind: OpenAI
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OpenAIChatCompletions-3hv4z
+  namespace: interact_gw_openrouter
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  tlsClientProfile: sample-tls-client-profile:1.0.0
+  operation:
+    chatCompletions: {}

@@ -1,0 +1,20 @@
+kind: Telemetry
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Telemetry-3hv4z
+  namespace: interact_gw_openrouter
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  verbosity:
+    - level: basic
+      onSuccessTrimTo: normal
+      inboundLevel: basic
+      outboundLevel: basic
+      operations:
+        - path: /chat/completions
+          method: POST

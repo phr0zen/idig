@@ -1,0 +1,24 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: freeflowpolicysequence-openrouter-llm-proxy-3hv4z
+  namespace: interact_gw_openrouter
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: interact_gw_openrouter:ExtractIdentity-3hv4z:1.0.0
+    - $ref: interact_gw_openrouter:Authenticate-3hv4z:1.0.0
+    - $ref: interact_gw_openrouter:Authorize-3hv4z:1.0.0
+    - $ref: interact_gw_openrouter:If-3hv4z:1.0.0
+    - $ref: interact_gw_openrouter:OperationSwitch-3hv4z:1.0.0
+  monitoring:
+    $ref: interact_gw_openrouter:Telemetry-3hv4z:1.0.0
+  error:
+    - errorType: []
+      execute:
+        - $ref: interact_gw_openrouter:Throw-3hv4z:1.0.0
