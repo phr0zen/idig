@@ -32,4 +32,12 @@ projects:
       - mcp-server
       - weather-api
       - ai
-    lastUpdated: 1792656809345
+    lastUpdated: 1792656819951
+  Interact_GW_OpenRouter:
+    id: NpvLhl6J
+    description: ''
+    tags:
+      - DataPower Nano Gateway
+      - OpenRouter LLM
+      - AI
+    lastUpdated: 1794243058126
